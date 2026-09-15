@@ -19,67 +19,71 @@
       font-family: Arial, sans-serif;
       color: #333;
       background: #fff;
-      line-height: 1.6;
+      line-height: 1.7;
+      font-size: 17px;
     }
 
     header {
       background: #f3f8f8;
-      padding: 20px;
+      padding: 25px 20px;
       text-align: center;
       border-bottom: 1px solid #e5eeee;
     }
 
     header h1 {
       color: #2d7777;
-      font-size: 28px;
-      margin-bottom: 8px;
+      font-size: 32px;
+      margin-bottom: 10px;
     }
 
     header p {
       color: #666;
+      font-size: 18px;
     }
 
     nav {
-      margin-top: 15px;
+      margin-top: 18px;
     }
 
     nav a {
       color: #2d7777;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 12px;
       font-weight: bold;
+      font-size: 17px;
     }
 
     .hero {
       text-align: center;
-      padding: 65px 20px;
+      padding: 75px 20px;
       background: #eef7f7;
     }
 
     .hero h2 {
-      font-size: 38px;
+      font-size: 42px;
       color: #286d6d;
-      margin-bottom: 15px;
+      margin-bottom: 18px;
     }
 
     .hero p {
-      max-width: 700px;
+      max-width: 750px;
       margin: auto;
-      font-size: 18px;
+      font-size: 20px;
       color: #555;
     }
 
     .buttons {
-      margin-top: 25px;
+      margin-top: 30px;
     }
 
     .button {
       display: inline-block;
-      padding: 13px 22px;
-      margin: 6px;
+      padding: 15px 26px;
+      margin: 7px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 17px;
       background: #2d7777;
       color: white;
     }
@@ -91,65 +95,47 @@
     }
 
     .section {
-      max-width: 1050px;
+      max-width: 1100px;
       margin: auto;
-      padding: 55px 20px;
+      padding: 65px 25px;
     }
 
     .section h2 {
       text-align: center;
       color: #2d7777;
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
-
-    .section-intro {
-      text-align: center;
-      color: #666;
-      margin-bottom: 25px;
+      font-size: 34px;
+      margin-bottom: 20px;
     }
 
     .presentation {
-      max-width: 800px;
+      max-width: 850px;
       margin: auto;
       text-align: center;
-      font-size: 17px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-      max-width: 600px;
-      margin: 25px auto;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 10px;
-      display: block;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      font-size: 18px;
     }
 
     .services {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-      margin-top: 30px;
+      gap: 22px;
+      margin-top: 35px;
     }
 
     .service {
       background: #f7fafa;
       border: 1px solid #e4eeee;
       border-radius: 12px;
-      padding: 22px;
+      padding: 27px;
     }
 
     .service h3 {
       color: #2d7777;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .service p {
+      font-size: 17px;
     }
 
     .contact {
@@ -157,13 +143,14 @@
     }
 
     .contact-box {
-      max-width: 750px;
+      max-width: 800px;
       margin: auto;
       text-align: center;
     }
 
     .contact-box p {
-      margin: 10px 0;
+      margin: 13px 0;
+      font-size: 18px;
     }
 
     .contact-box a {
@@ -175,21 +162,42 @@
       background: #2d7777;
       color: white;
       text-align: center;
-      padding: 22px;
-      font-size: 14px;
+      padding: 25px;
+      font-size: 16px;
     }
 
     @media (max-width: 700px) {
 
       header h1 {
-        font-size: 23px;
+        font-size: 27px;
+      }
+
+      header p {
+        font-size: 17px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
       }
 
       .hero {
-        padding: 45px 18px;
+        padding: 55px 20px;
       }
 
       .hero h2 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .section {
+        padding: 50px 20px;
+      }
+
+      .section h2 {
         font-size: 29px;
       }
 
@@ -197,19 +205,12 @@
         grid-template-columns: 1fr;
       }
 
-      .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 300px;
-        gap: 10px;
+      .service {
+        padding: 22px;
       }
 
-      .gallery img {
-        height: 100px;
-      }
-
-      nav a {
-        display: inline-block;
-        margin: 5px;
+      .button {
+        padding: 14px 22px;
       }
     }
   </style>
@@ -225,7 +226,6 @@
 
   <nav>
     <a href="#cabinet">Le cabinet</a>
-    <a href="#photos">Photos</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -272,33 +272,6 @@
       orthophoniques et des prises en charge des différentes difficultés
       de communication, de langage et d’apprentissage.
     </p>
-
-  </div>
-
-</section>
-
-
-<section id="photos" class="section">
-
-  <h2>Le cabinet en images</h2>
-
-  <p class="section-intro">
-    Découvrez notre cabinet et notre espace de consultation.
-  </p>
-
-  <div class="gallery">
-
-    <img src="cabinet.jpg"
-         alt="Cabinet d’orthophonie à Kénitra">
-
-    <img src="salle.jpg?v=2"
-         alt="Salle de consultation en orthophonie à Kénitra">
-
-    <img src="immeuble.jpg?v=2"
-         alt="Immeuble du cabinet d’orthophonie à Kénitra">
-
-    <img src="carte-visite.jpg"
-         alt="Carte de visite du Cabinet d’orthophonie Anissa Fatallah">
 
   </div>
 
