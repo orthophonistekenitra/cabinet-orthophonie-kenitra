@@ -1,417 +1,386 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cabinet d’orthophonie Anissa Fatallah | Kénitra</title>
+  <title>Cabinet d’orthophonie Anissa Fatallah | Kénitra</title>
 
-    <meta name="description"
-          content="Cabinet d’orthophonie Anissa Fatallah à Kénitra. Bilan et prise en charge des troubles du langage, de la parole, de la communication et des apprentissages.">
+  <meta name="description" content="Cabinet d’orthophonie Anissa Fatallah à Kénitra, La Ville Haute. Bilan orthophonique et prise en charge des troubles du langage, de la parole, de la communication, de la voix et des apprentissages.">
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            color: #263f40;
-            line-height: 1.6;
-            background: #ffffff;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background: #ffffff;
+      line-height: 1.6;
+    }
 
-        header {
-            background: #ffffff;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #e5eeee;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
+    header {
+      background: #f3f8f8;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #e5eeee;
+    }
 
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-            color: #2f7073;
-        }
+    header h1 {
+      color: #2d7777;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
 
-        nav a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: #344d4e;
-            font-weight: bold;
-        }
+    header p {
+      color: #666;
+      font-size: 16px;
+    }
 
-        .hero {
-            background: linear-gradient(135deg, #edf7f6, #ffffff);
-            padding: 90px 7%;
-            text-align: center;
-        }
+    nav {
+      margin-top: 15px;
+    }
 
-        .hero h1 {
-            font-size: 46px;
-            color: #245e61;
-            margin-bottom: 20px;
-        }
+    nav a {
+      color: #2d7777;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
 
-        .hero p {
-            max-width: 750px;
-            margin: auto;
-            font-size: 18px;
-            color: #5d7071;
-        }
+    .hero {
+      text-align: center;
+      padding: 65px 20px;
+      background: #eef7f7;
+    }
 
-        .buttons {
-            margin-top: 30px;
-        }
+    .hero h2 {
+      font-size: 38px;
+      color: #286d6d;
+      margin-bottom: 15px;
+    }
 
-        .button {
-            display: inline-block;
-            padding: 14px 24px;
-            margin: 7px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      color: #555;
+    }
 
-        .primary {
-            background: #2f7073;
-            color: white;
-        }
+    .buttons {
+      margin-top: 25px;
+    }
 
-        .whatsapp {
-            background: #dcefed;
-            color: #245e61;
-        }
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      margin: 6px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #2d7777;
+      color: white;
+    }
 
-        section {
-            padding: 75px 7%;
-        }
+    .button.secondary {
+      background: #ffffff;
+      color: #2d7777;
+      border: 1px solid #2d7777;
+    }
 
-        .section-title {
-            text-align: center;
-            color: #245e61;
-            font-size: 34px;
-            margin-bottom: 40px;
-        }
+    .section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 55px 20px;
+    }
 
-        .about {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-            color: #5d7071;
-            font-size: 17px;
-        }
+    .section h2 {
+      text-align: center;
+      color: #2d7777;
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
+    .section-intro {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+    }
 
-        .service {
-            padding: 25px;
-            background: #f5f9f8;
-            border-radius: 12px;
-        }
+    .presentation {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+    }
 
-        .service h3 {
-            color: #2f7073;
-            margin-bottom: 10px;
-        }
+    /* GALERIE PHOTOS */
 
-        .service p {
-            color: #687879;
-        }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      max-width: 850px;
+      margin: 30px auto 0;
+    }
 
-        .contact {
-            background: #edf7f6;
-            text-align: center;
-        }
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 14px;
+      display: block;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+    }
 
-        .contact p {
-            margin: 10px 0;
-            color: #526566;
-        }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
 
-        .contact a {
-            color: #245e61;
-            font-weight: bold;
-        }
+    .service {
+      background: #f7fafa;
+      border: 1px solid #e4eeee;
+      border-radius: 12px;
+      padding: 22px;
+    }
 
-        footer {
-            background: #245e61;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            font-size: 14px;
-        }
+    .service h3 {
+      color: #2d7777;
+      margin-bottom: 8px;
+    }
 
-        @media (max-width: 700px) {
+    .contact {
+      background: #eef7f7;
+    }
 
-            header {
-                display: block;
-                text-align: center;
-            }
+    .contact-box {
+      max-width: 750px;
+      margin: auto;
+      text-align: center;
+    }
 
-            nav {
-                margin-top: 12px;
-            }
+    .contact-box p {
+      margin: 10px 0;
+    }
 
-            nav a {
-                margin: 0 7px;
-                font-size: 14px;
-            }
+    .contact-box a {
+      color: #2d7777;
+      text-decoration: none;
+    }
 
-            .hero {
-                padding: 60px 6%;
-            }
+    footer {
+      background: #2d7777;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      font-size: 14px;
+    }
 
-            .hero h1 {
-                font-size: 34px;
-            }
+    @media (max-width: 700px) {
 
-            .hero p {
-                font-size: 16px;
-            }
+      header h1 {
+        font-size: 23px;
+      }
 
-            .services {
-                grid-template-columns: 1fr;
-            }
+      .hero {
+        padding: 45px 18px;
+      }
 
-            section {
-                padding: 55px 6%;
-            }
-        }
-    </style>
+      .hero h2 {
+        font-size: 29px;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery img {
+        height: 180px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-
-    <div class="logo">
-        Cabinet d’orthophonie Anissa Fatallah
-    </div>
+  <header>
+    <h1>Cabinet d’orthophonie Anissa Fatallah</h1>
+    <p>Kénitra · La Ville Haute</p>
 
     <nav>
-        <a href="#cabinet">Le cabinet</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+      <a href="#cabinet">Le cabinet</a>
+      <a href="#photos">Photos</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
-</header>
-
-
-<section class="hero">
-
-    <h1>Cabinet d’orthophonie à Kénitra</h1>
+  <section class="hero">
+    <h2>Cabinet d’orthophonie à Kénitra</h2>
 
     <p>
-        Le Cabinet d’orthophonie Anissa Fatallah accueille
-        enfants et adultes pour l’évaluation et la prise en charge
-        des difficultés de communication, de langage, de parole,
-        de voix et des apprentissages.
+      Accompagnement des enfants et des adultes présentant des difficultés
+      de communication, de langage, de parole, de voix, de déglutition
+      ou d’apprentissage.
     </p>
 
     <div class="buttons">
+      <a class="button" href="tel:+212537375842">
+        Appeler le cabinet
+      </a>
 
-        <a class="button primary"
-           href="tel:+212537375842">
-            📞 Appeler le cabinet
-        </a>
+      <a class="button secondary"
+         href="https://wa.me/212638703897"
+         target="_blank">
+        WhatsApp
+      </a>
+    </div>
+  </section>
 
-        <a class="button whatsapp"
-           href="https://wa.me/212638703897"
-           target="_blank">
-            💬 WhatsApp
-        </a>
+  <section id="cabinet" class="section">
+    <h2>Le cabinet</h2>
+
+    <div class="presentation">
+      <p>
+        Le Cabinet d’orthophonie Anissa Fatallah, situé à Kénitra,
+        La Ville Haute, accueille enfants et adultes pour des bilans
+        orthophoniques et des prises en charge adaptées aux différentes
+        difficultés de communication, de langage et d’apprentissage.
+      </p>
+    </div>
+  </section>
+
+  <section id="photos" class="section">
+    <h2>Le cabinet en images</h2>
+
+    <p class="section-intro">
+      Découvrez notre cabinet et notre espace de consultation.
+    </p>
+
+    <div class="gallery">
+
+      <img src="./cabinet.jpg"
+           alt="Cabinet d’orthophonie à Kénitra">
+
+      <img src="./salle.jpg"
+           alt="Salle de consultation en orthophonie à Kénitra">
+
+      <img src="./immeuble.jpg"
+           alt="Immeuble du cabinet d’orthophonie à Kénitra">
+
+      <img src="./carte-visite.jpg"
+           alt="Carte de visite du Cabinet d’orthophonie Anissa Fatallah">
 
     </div>
+  </section>
 
-</section>
-
-<section id="photos" class="section">
-  <h2>Le cabinet en images</h2>
-  <p class="section-intro">Découvrez notre espace de consultation et notre environnement de travail.</p>
-
-  <div class="gallery">
-    <img src="cabinet.jpg" alt="Cabinet d’orthophonie à Kénitra">
-    <img src="salle.jpg" alt="Salle de consultation en orthophonie à Kénitra">
-    <img src="immeuble.jpg" alt="Immeuble du cabinet d’orthophonie à Kénitra">
-    <img src="carte-visite.jpg" alt="Carte de visite du Cabinet d’orthophonie Anissa Fatallah">
-  </div>
-</section>
-<section id="cabinet">
-
-    <h2 class="section-title">
-        Le cabinet
-    </h2>
-
-    <div class="about">
-
-        <p>
-            Le Cabinet d’orthophonie Anissa Fatallah,
-            situé à Kénitra, propose des bilans orthophoniques
-            ainsi que des prises en charge adaptées aux besoins
-            de chaque patient.
-        </p>
-
-        <br>
-
-        <p>
-            Le cabinet accueille les enfants et les adultes
-            présentant des difficultés ou des troubles de la
-            communication, du langage, de la parole, de la voix,
-            de la déglutition ou des apprentissages.
-        </p>
-
-    </div>
-
-</section>
-
-
-<section id="services">
-
-    <h2 class="section-title">
-        Nos services
-    </h2>
+  <section id="services" class="section">
+    <h2>Nos services</h2>
 
     <div class="services">
 
-        <div class="service">
-            <h3>Bilan orthophonique</h3>
-            <p>
-                Évaluation des compétences et des difficultés
-                afin d’orienter la prise en charge.
-            </p>
-        </div>
+      <div class="service">
+        <h3>Bilan orthophonique</h3>
+        <p>Évaluation des difficultés et des besoins en orthophonie.</p>
+      </div>
 
-        <div class="service">
-            <h3>Langage oral</h3>
-            <p>
-                Prise en charge des difficultés et troubles
-                du langage oral.
-            </p>
-        </div>
+      <div class="service">
+        <h3>Langage oral</h3>
+        <p>Prise en charge des troubles et difficultés du langage oral.</p>
+      </div>
 
-        <div class="service">
-            <h3>Langage écrit</h3>
-            <p>
-                Accompagnement des difficultés de lecture,
-                d’écriture et des apprentissages.
-            </p>
-        </div>
+      <div class="service">
+        <h3>Langage écrit</h3>
+        <p>Accompagnement des difficultés de lecture, d’écriture et des apprentissages.</p>
+      </div>
 
-        <div class="service">
-            <h3>Parole & articulation</h3>
-            <p>
-                Prise en charge des troubles de la parole
-                et de l’articulation.
-            </p>
-        </div>
+      <div class="service">
+        <h3>Parole & articulation</h3>
+        <p>Prise en charge des troubles de la parole et de l’articulation.</p>
+      </div>
 
-        <div class="service">
-            <h3>Communication</h3>
-            <p>
-                Accompagnement des difficultés de communication.
-            </p>
-        </div>
+      <div class="service">
+        <h3>Communication</h3>
+        <p>Accompagnement des difficultés de communication.</p>
+      </div>
 
-        <div class="service">
-            <h3>Voix</h3>
-            <p>
-                Accompagnement des difficultés liées à la voix.
-            </p>
-        </div>
+      <div class="service">
+        <h3>Voix</h3>
+        <p>Prise en charge des difficultés liées à la voix.</p>
+      </div>
 
-        <div class="service">
-            <h3>Déglutition & alimentation</h3>
-            <p>
-                Accompagnement de certaines difficultés
-                de déglutition et d’alimentation.
-            </p>
-        </div>
+      <div class="service">
+        <h3>Déglutition & alimentation</h3>
+        <p>Accompagnement de certaines difficultés de déglutition et d’alimentation.</p>
+      </div>
 
-        <div class="service">
-            <h3>Enfants & adultes</h3>
-            <p>
-                Accompagnement adapté à l’âge et aux besoins
-                de chaque patient.
-            </p>
-        </div>
+      <div class="service">
+        <h3>Enfants & adultes</h3>
+        <p>Accueil et accompagnement adaptés aux besoins de chaque patient.</p>
+      </div>
 
     </div>
+  </section>
 
-</section>
+  <section id="contact" class="section contact">
+    <div class="contact-box">
 
+      <h2>Contact</h2>
 
-<section class="contact" id="contact">
-
-    <h2 class="section-title">
-        Contact
-    </h2>
-
-    <p>
-        📍 Résidence JACARANDA, Immeuble Nº10,
-        Bureau Nº3
-    </p>
-
-    <p>
+      <p>
+        <strong>Adresse :</strong><br>
+        Résidence JACARANDA, Immeuble Nº10, Bureau Nº3,<br>
         Rue Ahmed Chaouki, La Ville Haute, Kénitra
-    </p>
+      </p>
 
-    <p>
-        📞 <a href="tel:+212537375842">
-            05 37 37 58 42
+      <p>
+        <strong>Téléphone :</strong><br>
+        <a href="tel:+212537375842">05 37 37 58 42</a>
+      </p>
+
+      <p>
+        <strong>WhatsApp :</strong><br>
+        <a href="https://wa.me/212638703897" target="_blank">
+          06 38 70 38 97
         </a>
-    </p>
+      </p>
 
-    <p>
-        📱 <a href="tel:+212638703897">
-            06 38 70 38 97
+      <p>
+        <strong>Email :</strong><br>
+        <a href="mailto:orthophonie.kenitra@gmail.com">
+          orthophonie.kenitra@gmail.com
         </a>
-    </p>
+      </p>
 
-    <p>
-        ✉️ <a href="mailto:orthophonie.kenitra@gmail.com">
-            orthophonie.kenitra@gmail.com
-        </a>
-    </p>
-
-    <div class="buttons">
-
-        <a class="button primary"
+      <div class="buttons">
+        <a class="button"
            href="https://maps.app.goo.gl/tFMDrh4bZSAMceta6"
            target="_blank">
-            📍 Voir la localisation
+          Voir sur Google Maps
         </a>
-
-        <a class="button whatsapp"
-           href="https://wa.me/212638703897"
-           target="_blank">
-            💬 Écrire sur WhatsApp
-        </a>
+      </div>
 
     </div>
+  </section>
 
-</section>
-
-
-<footer>
-
+  <footer>
     Cabinet d’orthophonie Anissa Fatallah · Kénitra
-
-</footer>
-
+  </footer>
 
 </body>
 </html>
