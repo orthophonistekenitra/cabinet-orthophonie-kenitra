@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,71 +20,71 @@
       font-family: Arial, sans-serif;
       color: #333;
       background: #fff;
-      line-height: 1.7;
-      font-size: 17px;
+      line-height: 1.8;
+      font-size: 18px;
     }
 
     header {
       background: #f3f8f8;
-      padding: 25px 20px;
+      padding: 30px 20px;
       text-align: center;
       border-bottom: 1px solid #e5eeee;
     }
 
     header h1 {
       color: #2d7777;
-      font-size: 32px;
-      margin-bottom: 10px;
+      font-size: 36px;
+      margin-bottom: 12px;
     }
 
     header p {
       color: #666;
-      font-size: 18px;
+      font-size: 20px;
     }
 
     nav {
-      margin-top: 18px;
+      margin-top: 22px;
     }
 
     nav a {
       color: #2d7777;
       text-decoration: none;
-      margin: 0 12px;
+      margin: 0 14px;
       font-weight: bold;
-      font-size: 17px;
+      font-size: 19px;
     }
 
     .hero {
       text-align: center;
-      padding: 75px 20px;
+      padding: 90px 20px;
       background: #eef7f7;
     }
 
     .hero h2 {
-      font-size: 42px;
+      font-size: 46px;
       color: #286d6d;
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
 
     .hero p {
-      max-width: 750px;
+      max-width: 850px;
       margin: auto;
-      font-size: 20px;
+      font-size: 22px;
       color: #555;
     }
 
     .buttons {
-      margin-top: 30px;
+      margin-top: 35px;
     }
 
     .button {
       display: inline-block;
-      padding: 15px 26px;
-      margin: 7px;
-      border-radius: 8px;
+      padding: 17px 30px;
+      margin: 8px;
+      border-radius: 9px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 17px;
+      font-size: 19px;
       background: #2d7777;
       color: white;
     }
@@ -95,47 +96,65 @@
     }
 
     .section {
-      max-width: 1100px;
+      max-width: 1150px;
       margin: auto;
-      padding: 65px 25px;
+      padding: 75px 25px;
     }
 
     .section h2 {
       text-align: center;
       color: #2d7777;
-      font-size: 34px;
-      margin-bottom: 20px;
+      font-size: 38px;
+      margin-bottom: 25px;
     }
 
     .presentation {
-      max-width: 850px;
+      max-width: 900px;
       margin: auto;
       text-align: center;
-      font-size: 18px;
+      font-size: 20px;
+    }
+
+    /* PHOTOS */
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .photos img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 1px solid #e4eeee;
+      display: block;
     }
 
     .services {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
-      margin-top: 35px;
+      gap: 25px;
+      margin-top: 40px;
     }
 
     .service {
       background: #f7fafa;
       border: 1px solid #e4eeee;
-      border-radius: 12px;
-      padding: 27px;
+      border-radius: 13px;
+      padding: 30px;
     }
 
     .service h3 {
       color: #2d7777;
-      margin-bottom: 10px;
-      font-size: 21px;
+      margin-bottom: 12px;
+      font-size: 23px;
     }
 
     .service p {
-      font-size: 17px;
+      font-size: 18px;
     }
 
     .contact {
@@ -143,14 +162,14 @@
     }
 
     .contact-box {
-      max-width: 800px;
+      max-width: 850px;
       margin: auto;
       text-align: center;
     }
 
     .contact-box p {
-      margin: 13px 0;
-      font-size: 18px;
+      margin: 15px 0;
+      font-size: 20px;
     }
 
     .contact-box a {
@@ -162,43 +181,65 @@
       background: #2d7777;
       color: white;
       text-align: center;
-      padding: 25px;
-      font-size: 16px;
+      padding: 28px;
+      font-size: 17px;
     }
 
     @media (max-width: 700px) {
 
+      body {
+        font-size: 17px;
+      }
+
+      header {
+        padding: 25px 15px;
+      }
+
       header h1 {
-        font-size: 27px;
+        font-size: 30px;
       }
 
       header p {
-        font-size: 17px;
+        font-size: 18px;
       }
 
       nav a {
         display: inline-block;
-        margin: 6px 8px;
+        margin: 7px 9px;
+        font-size: 17px;
       }
 
       .hero {
-        padding: 55px 20px;
+        padding: 65px 20px;
       }
 
       .hero h2 {
-        font-size: 32px;
+        font-size: 35px;
       }
 
       .hero p {
-        font-size: 18px;
+        font-size: 19px;
       }
 
       .section {
-        padding: 50px 20px;
+        padding: 60px 20px;
       }
 
       .section h2 {
-        font-size: 29px;
+        font-size: 32px;
+      }
+
+      .presentation {
+        font-size: 18px;
+      }
+
+      .photos {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .photos img {
+        height: 350px;
       }
 
       .services {
@@ -206,11 +247,24 @@
       }
 
       .service {
-        padding: 22px;
+        padding: 25px;
+      }
+
+      .service h3 {
+        font-size: 21px;
+      }
+
+      .service p {
+        font-size: 17px;
       }
 
       .button {
-        padding: 14px 22px;
+        padding: 15px 25px;
+        font-size: 18px;
+      }
+
+      .contact-box p {
+        font-size: 18px;
       }
     }
   </style>
@@ -226,6 +280,7 @@
 
   <nav>
     <a href="#cabinet">Le cabinet</a>
+    <a href="#photos">Photos</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -278,6 +333,25 @@
 </section>
 
 
+<section id="photos" class="section">
+
+  <h2>Photos du cabinet</h2>
+
+  <div class="photos">
+
+    <img src="carte-visite.jpg" alt="Carte de visite du Cabinet d’orthophonie Anissa Fatallah">
+
+    <img src="immeuble.jpg" alt="Immeuble du Cabinet d’orthophonie Anissa Fatallah">
+
+    <img src="salle.jpg" alt="Salle du Cabinet d’orthophonie Anissa Fatallah">
+
+    <img src="cabinet.jpg" alt="Cabinet d’orthophonie Anissa Fatallah">
+
+  </div>
+
+</section>
+
+
 <section id="services" class="section">
 
   <h2>Nos services</h2>
@@ -286,42 +360,60 @@
 
     <div class="service">
       <h3>Bilan orthophonique</h3>
-      <p>Évaluation des difficultés et des besoins en orthophonie.</p>
+      <p>
+        Évaluation des difficultés et des besoins en orthophonie.
+      </p>
     </div>
 
     <div class="service">
       <h3>Langage oral</h3>
-      <p>Prise en charge des troubles et difficultés du langage oral.</p>
+      <p>
+        Prise en charge des troubles et difficultés du langage oral.
+      </p>
     </div>
 
     <div class="service">
       <h3>Langage écrit</h3>
-      <p>Accompagnement des difficultés de lecture, d’écriture et des apprentissages.</p>
+      <p>
+        Accompagnement des difficultés de lecture, d’écriture
+        et des apprentissages.
+      </p>
     </div>
 
     <div class="service">
       <h3>Parole & articulation</h3>
-      <p>Prise en charge des troubles de la parole et de l’articulation.</p>
+      <p>
+        Prise en charge des troubles de la parole et de l’articulation.
+      </p>
     </div>
 
     <div class="service">
       <h3>Communication</h3>
-      <p>Accompagnement des difficultés de communication.</p>
+      <p>
+        Accompagnement des difficultés de communication.
+      </p>
     </div>
 
     <div class="service">
       <h3>Voix</h3>
-      <p>Prise en charge des difficultés liées à la voix.</p>
+      <p>
+        Prise en charge des difficultés liées à la voix.
+      </p>
     </div>
 
     <div class="service">
       <h3>Déglutition & alimentation</h3>
-      <p>Accompagnement de certaines difficultés de déglutition et d’alimentation.</p>
+      <p>
+        Accompagnement de certaines difficultés de déglutition
+        et d’alimentation.
+      </p>
     </div>
 
     <div class="service">
       <h3>Enfants & adultes</h3>
-      <p>Accueil et accompagnement adaptés aux besoins de chaque patient.</p>
+      <p>
+        Accueil et accompagnement adaptés aux besoins de chaque patient.
+      </p>
     </div>
 
   </div>
@@ -385,3 +477,4 @@
 
 </body>
 </html>
+```
