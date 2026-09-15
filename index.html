@@ -117,23 +117,23 @@
       font-size: 17px;
     }
 
-    /* GALERIE PHOTOS */
+    /* PHOTOS */
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-      max-width: 850px;
-      margin: 30px auto 0;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      max-width: 650px;
+      margin: 25px auto 0;
     }
 
     .gallery img {
       width: 100%;
-      height: 180px;
+      height: 100px;
       object-fit: cover;
-      border-radius: 14px;
+      border-radius: 10px;
       display: block;
-      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
     }
 
     .services {
@@ -201,11 +201,13 @@
       }
 
       .gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 320px;
+        gap: 10px;
       }
 
       .gallery img {
-        height: 180px;
+        height: 120px;
       }
 
       nav a {
@@ -259,13 +261,14 @@
       <p>
         Le Cabinet d’orthophonie Anissa Fatallah, situé à Kénitra,
         La Ville Haute, accueille enfants et adultes pour des bilans
-        orthophoniques et des prises en charge adaptées aux différentes
-        difficultés de communication, de langage et d’apprentissage.
+        orthophoniques et des prises en charge des différentes difficultés
+        de communication, de langage et d’apprentissage.
       </p>
     </div>
   </section>
 
   <section id="photos" class="section">
+
     <h2>Le cabinet en images</h2>
 
     <p class="section-intro">
@@ -287,9 +290,11 @@
            alt="Carte de visite du Cabinet d’orthophonie Anissa Fatallah">
 
     </div>
+
   </section>
 
   <section id="services" class="section">
+
     <h2>Nos services</h2>
 
     <div class="services">
@@ -335,9 +340,11 @@
       </div>
 
     </div>
+
   </section>
 
   <section id="contact" class="section contact">
+
     <div class="contact-box">
 
       <h2>Contact</h2>
@@ -368,14 +375,17 @@
       </p>
 
       <div class="buttons">
+
         <a class="button"
            href="https://maps.app.goo.gl/tFMDrh4bZSAMceta6"
            target="_blank">
           Voir sur Google Maps
         </a>
+
       </div>
 
     </div>
+
   </section>
 
   <footer>
